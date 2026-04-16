@@ -3,7 +3,7 @@
 ---
 
 ## 1. Descripción :
-Este repositorio contiene una practica de sistemas operativos desarrollada con **C++ y Bash** cuyo objetivo es procesar, organizar y analizar datos de sensores obtenidos de *una pinza robotica*.
+Este repositorio contiene una practica de sistemas operativos desarrollada con **C++ y Bash** cuyo objetivo es procesar, organizar y analizar datos de sensores obtenidos de una pinza robotica.
 
 El sistema trabaja con datos de: 
 -	Galga extensométrica
@@ -21,6 +21,7 @@ El proyecto resuelve el problema mediante:
 El programa utiliza conceptos fundamentales como:
 -	Lectura y escritura de archivos ( `ifstream`,`ofstream`)
 -	Uso de arrays y matrices
+-	Procesamiento de datos
 -	Control de procesos en **Bash**
   
 ---
@@ -57,7 +58,7 @@ fstream
 
 ### 4.1 Compilación:
 ```bash
-g++ -o pinza pinza.cpp
+g++ pinza.cpp -o pinza
 ```
 ### 4.2 Ejecución del programa:
 ```bash
@@ -84,12 +85,12 @@ El programa en C++ realiza las siguientes operaciones:
 
 El script Bash se encarga de automatizar la ejecucion del programa:
 
--	Compila el codigo C++ utilizando `g++ -o pinza pinza.cpp `
+-	Compila el codigo C++ utilizando `g++ pinza.cpp -o pinza `
 -	Ejecuta el programa  `./pinza`
 -	Lanza el proceso 
--	Espera a que el proceso finalice con `wait`
--	Comprueba si este proceso sigue activo con `kill -0`
--	Finaliza el proceso de forma controlada si es necesario con `kill`
+-	Espera a que el proceso finalice con  `wait`
+-	Comprueba si este proceso sigue activo con  `kill -0`
+-	Finaliza el proceso de forma controlada si es necesario con  `kill`
 
 ---
 ## 7. Ejemplo de salida :
@@ -110,9 +111,10 @@ Asegurarse de tener instalado `g++`
 
 ---
 ## 9. Autores :
-**Naela Khaldi** y **Zineb Hamman**
-Sistemas Operativos
- Curso Académico 2025/2026
+**Naela Khaldi** y **Zineb Hamman**   
+Sistemas Operativos  
+ Curso Académico 2025/2026  
+
  ---
  
  ## 10. Notas:
