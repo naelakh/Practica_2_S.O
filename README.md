@@ -1,4 +1,4 @@
-# Practica 2 :Pinza Robotica 
+# Practica 2 : Pinza Robotica 
 
 ---
 
@@ -11,12 +11,12 @@ El sistema trabaja con datos de:
 -	Fuerza en el dedo derecho .
   
 El proyecto resuelve el problema mediante:
--	Lectura de datos desde un archivo **( datos_pinza.txt)**
+-	Lectura de datos desde un archivo **datos_pinza.txt**
 -	Almacenamiento en arrays y matrices
 -	Organizacion de los datos
 -	Calculo de valores medios de los sensores
 -	Analisis de estabilidad del sistema
--	Generacion de un archivo de resultados **(resultado_pinza.txt)** .
+-	Generacion de un archivo de resultados **resultado_pinza.txt** .
   
 El programa utiliza conceptos fundamentales como:
 -	Lectura y escritura de archivos ( `ifstream`,`ofstream`)
@@ -45,8 +45,12 @@ Practica_2_SO/
 Este proyecto no requiere librerias externas adicionales.
 
 Utiliza unicamente librerias estandar de C++ como :
-
-`iostream` y  `fstream` . 
+```bash
+iostream
+```
+```bash
+fstream
+```
 ---
 
 ## 4. Compilación y ejecución :
@@ -67,6 +71,7 @@ chmod +x script.sh
 ./script.sh
 ```
 ## 5.Funcionamiento del programa en C++ :
+
 El programa en C++ realiza las siguientes operaciones:
 -	Lectura de datos desde un archivo
 -	Almacenamiento en arrays y matrices
@@ -85,6 +90,37 @@ El script Bash se encarga de automatizar la ejecucion del programa:
 -	Espera a que el proceso finalice con `wait`
 -	Comprueba si este proceso sigue activo con `kill -0`
 -	Finaliza el proceso de forma controlada si es necesario con `kill`
+
+---
+## 7. Ejemplo de salida :
+Tras ejecutar el programa correctamente, se generan las siguientes salidas:
+-	Se muestran los datos por pantalla
+-	Se calculan y muestran las medias
+-	Se indica el estado de cada muestra
+-	Se genera un archivo  **resultado_pinza.txt**
+
+---
+## 8. Problemas comunes :
+
+### Error al abrir archivo:
+Verificar que `datos_pinza.txt` existe en el mismo directorio.
+
+### Error de compilación:
+Asegurarse de tener instalado `g++`
+
+---
+## 9. Autores :
+**Naela Khaldi** y **Zineb Hamman**
+Sistemas Operativos
+ Curso Académico 2025/2026
+ ---
+ 
+ ## 10. Notas:
+ 
+ El proyecto se desarrolló como parte de una práctica de Programación en C++ orientada al procesamiento de datos de sensores en un sistema de pinza robotica.
+ 
+
+
 
 
 
